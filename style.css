@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    margin: 0;
+}
+body{
+    background-color: rgb(231, 231, 231);
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 20px 0px;
+    height: 100px;
+    border-bottom: 1px solid gray;
+}
+
+.header img{
+    width: 50px;
+}
+
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mail, .user{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+/* .aside{
+    width: 15%;
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.aside-menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+}
+
+.aside-menu:hover{
+    background-color: lightsalmon;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+}
+
+.letters-grid{
+    display: grid;
+    grid-template-columns: min-content 35% 50% min-content;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.aside{
+    width: 15%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+} */
+
+.main-wrapper{
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+.aside-element{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 32px 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.aside-element:hover{
+    background-color: lightsalmon;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+}
+
+.aside-bar{
+    padding: 15px;
+    
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-rows: repeat(8, 40px); /* Ряды автоматически растягиваются */
+    grid-template-columns: 50px 25% 1fr 25px 8%; /* 5 равных столбцов */
+    
+}
+
+.grid-wrapper .el {
+    border-bottom: 1px solid lightgray;
+    display: grid;
+    align-items: center; /* Центрирование по вертикали */
+    
+}
+
+.grid-wrapper img {
+    width: 15px; /* Ширина картинок */
+}
+
+.letters{
+    padding: 10px 0;
+}
+
+.letters span{
+    opacity: 0.5;
+}
